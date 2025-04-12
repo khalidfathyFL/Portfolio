@@ -25,3 +25,14 @@ yarn-error.log*
 #user generated content
 public/profile.json
 public/blogs.json
+
+
+
+.vs/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sublime-project
