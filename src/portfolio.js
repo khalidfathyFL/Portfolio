@@ -38,7 +38,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/khalidfathyua1/",
   gmail: "khalidfathyuar@gmail.com",
   medium: "https://medium.com/@khalidfathyuar",
- youtube: "https://www.youtube.com/c/EngKhalidFathy",
+  youtube: "https://www.youtube.com/c/EngKhalidFathy",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -69,7 +69,7 @@ const skillsSection = {
     { skillName: "GitHub Actions", fontAwesomeClassname: "fab fa-github" },
     { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
     { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "Revit API",   logoPath: "Revit.svg" },
+    { skillName: "Revit API", logoPath: "Revit.svg" },
     { skillName: "NavisWorks API", fontAwesomeClassname: "fas fa-project-diagram" },
     { skillName: "AutoCAD API", logoPath: "AutoCad.svg" },
     { skillName: "Dynamo", fontAwesomeClassname: "fas fa-cubes" },
@@ -113,7 +113,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -189,7 +189,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -198,8 +198,21 @@ const bigProjects = {
   title: "Big Projects",
   subtitle: "REAL PROJECTS I BUILT FOR COMPANIES OR AS PART OF MY AEC TOOLKIT",
   projects: [
+    // {
+    //   image: require("./assets/images/Portfolio.png"), // Replace with your own image if available
+    //   projectName: "Portfolio",
+    //   projectDesc:
+    //     "A showcase of my work and skills as an AEC Software Engineer. Watch the video to explore my portfolio in detail.",
+    //   footerLink: [
+    //     {
+    //       name: "Portfolio Video",
+    //       url: "https://drive.google.com/file/d/1pHEjWeLU9l3gV2G3QhmiWmLPIbb-3H_e/view?usp=sharing"
+    //     }
+    //   ]
+    // },
+    // ,
     {
-      image: require("./assets/images/MicroBIM-Fire-Circular.jpg"), // Replace with your own image if available
+      image: require("./assets/images/GeoExporter.png"),
       projectName: "Geo Exporter",
       projectDesc:
         "Export Revit models to 20+ file formats (Unity, Blender, Unreal, etc.), retaining all materials, multilingual UI, and includes a 3D viewer.",
@@ -211,38 +224,44 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/MicroBIM-Fire-Circular.jpg"), // Replace with your ERP logo if any
+      image: require("./assets/images/ColumnRebar.png"), 
+      projectName: "Column Rebar Generator",
+      projectDesc:
+        "A Revit plugin that generates rebar for columns based on user-defined parameters and reinforcement codes.",
+      footerLink: [
+        {
+          name: "Demo",
+          url: "https://drive.google.com/file/d/1fC-idmQnyOoPcEb2bcJv8_ccLvATUy5I/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/CG.jpg"), 
       projectName: "CGenius System",
       projectDesc:
         "A custom ERP system for internal use including HR and project modules. Built with Entity Framework and N-tier architecture.",
       footerLink: [
-        {
-          name: "GitHub / Details",
-          url: "https://drive.google.com/file/d/1zYLdZGMTV-TyztPjJnJK-CoRgnlN6D0w/view?usp=sharing"
-        }
+      
       ]
     },
     {
-      image: require("./assets/images/MicroBIM-Fire-Circular.jpg"),
+      image: require("./assets/images/CG.jpg"),
       projectName: "Email Refiner Outlook Add-in",
       projectDesc:
         "Outlook add-in that uses GPT for intelligent email composition and MongoDB for dynamic email signatures.",
       footerLink: [
-        {
-          name: "More Info",
-          url: "https://drive.google.com/file/d/1qR6J5gQ0BsMueLATFUG_fzrWFDlf6MJ8/view?usp=sharing"
-        }
+      
       ]
     },
     {
-      image: require("./assets/images/MicroBIM-Fire-Circular.jpg"),
+      image: require("./assets/images/Tiles.png"),
       projectName: "Tiles Generator",
       projectDesc:
         "Plugin that generates floor tiles from Revit room boundaries using predefined patterns like Herringbone, Ashlar, etc.",
       footerLink: []
     },
     {
-      image: require("./assets/images/MicroBIM-Fire-Circular.jpg"),
+      image: require("./assets/images/OspCde.jpg"), 
       projectName: "Common Data Environment (OSP CDE)",
       projectDesc:
         "Graduation project from ITI: A centralized BIM collaboration platform ensuring version control and streamlined workflows.",
@@ -254,7 +273,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/MicroBIM-Fire-Circular.jpg"), // Replace with a clothify image if available
+      image: require("./assets/images/Clothify.jpg"), 
       projectName: "Clothify E-Commerce App",
       projectDesc:
         "ASP.NET Core MVC-based e-commerce app for clothing stores with full product and cart functionality.",
@@ -320,7 +339,7 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
@@ -328,7 +347,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -371,7 +390,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -384,7 +403,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -407,7 +426,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
